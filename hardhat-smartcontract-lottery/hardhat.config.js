@@ -28,6 +28,17 @@ module.exports = {
             chainId: 5,
         },
     },
+    gasReporter: {
+        enabled: false,
+        currency: "USD",
+        outputFile: "gas-report.txt",
+        noColors: true,
+    },
+    etherscan: {
+        apiKey: {
+            goerli: ETHERSCAN_API_KEY,
+        },
+    },
     solidity: "0.8.8",
     namedAccounts: {
         deployer: {
